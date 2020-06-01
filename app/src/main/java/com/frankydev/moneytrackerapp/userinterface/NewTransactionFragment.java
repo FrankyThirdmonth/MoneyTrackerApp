@@ -275,7 +275,7 @@ public class NewTransactionFragment extends BaseFragment implements
                     public void onClick(View v) {
                         Transaction currentTransaction = transactionViewModel.getAllTransactions().getValue().get(0);  // getting the last value inserted
                         transactionViewModel.deleteTransaction(currentTransaction);
-                        Toast.makeText(getContext(), "Revoked", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Not deleted", Toast.LENGTH_SHORT).show();
                     }
                 }).show();
 
