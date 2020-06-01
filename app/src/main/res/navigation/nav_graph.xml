@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@id/homeFragment"
+        android:name="com.frankydev.moneytrackerapp.userinterface.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_chargesLog"
+            app:destination="@id/chargesLogFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_newTransactionFragment"
+            app:destination="@id/newTransactionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_dateBalanceFragment"
+            app:destination="@id/dateBalanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chargesLogFragment"
+        android:name="com.frankydev.moneytrackerapp.userinterface.ChargesLogFragment"
+        android:label="Transactions log"
+        tools:layout="@layout/fragment_charges_log" >
+        <action
+            android:id="@+id/action_chargesLogFragment_to_newTransactionFragment"
+            app:destination="@id/newTransactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newTransactionFragment"
+        android:name="com.frankydev.moneytrackerapp.userinterface.NewTransactionFragment"
+        android:label="New transaction"
+        tools:layout="@layout/fragment_new_transaction" >
+        <action
+            android:id="@+id/action_newTransactionFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dateBalanceFragment"
+        android:name="com.frankydev.moneytrackerapp.userinterface.GoalFragment"
+        android:label="Set monthly goal"
+        tools:layout="@layout/fragment_date_balance" />
+    <fragment
+        android:id="@+id/trackingFragment"
+        android:name="com.frankydev.moneytrackerapp.userinterface.TrackingFragment"
+        android:label="Year trending"
+        tools:layout="@layout/fragment_tracking" />
+</navigation>

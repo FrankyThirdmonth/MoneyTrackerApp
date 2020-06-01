@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/chargesLogFragment"
+            android:icon="@drawable/ic_format_list_bulleted"
+            android:title="Log" />
+
+        <item
+            android:id="@+id/dateBalanceFragment"
+            android:icon="@drawable/ic_date_range"
+            android:title="Set your goal" />
+
+
+        <item android:title="Other">
+
+
+            <menu>
+
+                <item
+                    android:id="@+id/trackingFragment"
+                    android:icon="@drawable/ic_trending"
+                    android:title="Trending" />
+
+            </menu>
+
+
+        </item>
+
+    </group>
+
+
+</menu>
